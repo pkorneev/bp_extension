@@ -45,7 +45,7 @@ export class SidebarProvider implements vscode.WebviewViewProvider {
           break;
         }
         case "lessonsWithDeadlines": {
-          const lessonsMap = data.value.map((lesson) => {
+          const lessonsMap = data.value.map((lesson: any) => {
             return {
               id: lesson.id,
               deadline: lesson.deadline,
